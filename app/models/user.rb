@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
     identity = Identity.find_for_oauth(auth)
     user = signed_in_resource ? signed_in_resource : identity.user
     user = create_user(auth) if user.nil?
+    puts "USER: #{user}"
   end
 
   private
