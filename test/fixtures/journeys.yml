@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_destination: MyString
+  end_destination: MyString
+  departure_date: MyString
+  price: 9.99
+  free_seats: 1
+  user_id: 
+
+two:
+  start_destination: MyString
+  end_destination: MyString
+  departure_date: MyString
+  price: 9.99
+  free_seats: 1
+  user_id: 

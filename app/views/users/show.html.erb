@@ -3,6 +3,8 @@
   <div class="card-deck">
     <p class="card-text">Email: <%= @user.email %></p>
     <p class="card-text">Username: <%= @user.username %></p>
-    <p class="card-text">Blah Blah Blah</p>
+    <p class="card-text">First Name: <%= @user.first_name %></p>
+    <p class="card-text">Last Name: <%= @user.last_name %></p>
+    <%= render @user.journeys %>
   </div>
 </div>
