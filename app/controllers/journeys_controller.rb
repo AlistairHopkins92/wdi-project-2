@@ -10,6 +10,7 @@ class JourneysController < ApplicationController
   end
 
   def show
+    @journey = Journey.find(params[:id])
   end
 
   def create
