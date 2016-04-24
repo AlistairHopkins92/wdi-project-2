@@ -1,4 +1,5 @@
 class JourneysController < ApplicationController
+  before_filter :authenticate_user!, only: [:new]
 
   def index
   @journeys = Journey.all
@@ -31,7 +32,7 @@ class JourneysController < ApplicationController
   end
 
   private
-      def service_params
+      def journey_params
           params.require(:journey).permit(:start_destination, :end_destination, :departure_date, :price)
       end
 
