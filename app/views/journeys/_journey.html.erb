@@ -1,6 +1,5 @@
-<div class="card">
-
-    <p class="card-text"><%= journey.start_destination %> to <%= journey.end_destination %></p>
-    <p class="card-text">Date: <%= journey.departure_date %></p>
-
+<div class="card-deck-wrapper">
+  <div class="card-deck">
+  <p class="card-title"> <%= link_to ("#{journey.start_destination} to #{journey.end_destination}") , journey_path(journey) %>  <%= journey.departure_date %></p>
+  </div>
 </div>

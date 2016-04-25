@@ -24,4 +24,4 @@ u2 = User.create!(email: "car@line.com",
 j1 = u1.journeys.create!( start_destination: "Manchester",
                           end_destination: "Leeds",
                           departure_date: "27/04/16",
-                          price: "£10")
+                          price: "10.00")

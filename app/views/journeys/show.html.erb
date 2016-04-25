@@ -4,5 +4,6 @@
     <p class="card-text">End point: <%= @journey.end_destination %></p>
     <p class="card-text">Departure Date: <%= @journey.departure_date %></p>
     <p class="card-text">Price: <%= @journey.price %></p>
+    <p class="card-text">Driver: <%= link_to @journey.user.username, @journey.user %></p>
   </div>
 </div>
