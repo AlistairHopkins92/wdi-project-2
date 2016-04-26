@@ -2,6 +2,7 @@
 
 <%= search_form_for @q do |f| %>
   
+  <div class="medium-8 columns medium-centered" id="journies" data-equalizer-watch>
   <p>
     <%= f.label :starting_point %>
     <%= f.text_field :start_destination_cont %>
@@ -10,14 +11,18 @@
     <%= f.label :date_of_travel %>
     <%= f.text_field :departure_date_cont %>
   </p>
-
   <p>
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary" %>
   </p>
+  </div>
+
 <% end %>
 <h2>All Journeys</h2>
-<div class="card-deck-wrapper">
-  <div class="card-deck">
+
+<div class="row" data-equalizer>
+  <div class="medium-8 columns medium-centered" id="journies" data-equalizer-watch>
   <%= render @a %>
   </div>
 </div>
+
+

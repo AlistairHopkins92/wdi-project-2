@@ -5,18 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title><%= content_for?(:title) ? yield(:title) : "Ride with me" %></title>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "vendor/modernizr" %>
   <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= @homepage ? 'homepage' : '' %>">
 
 
 
-<%= render "header" %>
-<%= yield %>
+  <%= render "header" %>
+  <div class="row">
+    <div class="medium-12 columns">
+      <% flash.each do |name, message| %>
+      <div class="flash-message flash-message-<%= name %>">
+        <%= message %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row" data-equalizer>
+    <div class="medium-12 columns medium-centered" data-equalizer-watch>
+      <%= yield %>
+    </div>
+  </div>
+
 
 </body>
 </html>
+

@@ -2,10 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
+  background-color: rgba(123,123,123,0.4);
+  background-repeat: no-repeat;
+  // background-position: center center;
+  background-size: 100%;
+  height:100%;
+  width:100%;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+body.homepage {
   background-image: image-url("bwroad.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
+  height:100%;
+  width:100%;
   background-attachment: fixed;
   text-align: center;
 }
@@ -33,12 +46,43 @@ label{
 
 fieldset{
   background-color: transparent;
+  border:0;
 }
 
 hr{
   border: 0;
 }
-input {
-  opacity: 0.3;
-  font: white;
+input[type="text"],input[type="text"]:focus,
+input[type="email"],input[type="email"]:focus,
+input[type="password"], input[type="password"]:focus,
+input[type="date"], input[type="date"]:focus,
+ textarea {
+  background: rgba(255,255,255,0.3);
+  color: white;
+}
+
+
+
+input.btn{
+  color:white;
+  opacity: 0.7;
+  background: grey;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+h5 {
+  font-size: 50px;
+  position: fixed;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+#journies {
+  background-color: rgba(123,123,123,1);
+  padding-top:40px;
+  padding-bottom: 20px;
+  border-radius: 30px;
 }

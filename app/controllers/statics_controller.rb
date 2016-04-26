@@ -1,5 +1,5 @@
 class StaticsController < ApplicationController
   def home
-    puts current_user
+    @homepage = true
   end
 end
