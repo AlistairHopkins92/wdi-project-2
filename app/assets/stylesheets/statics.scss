@@ -1,3 +1,44 @@
 // Place all the styles related to the statics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: image-url("bwroad.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+h1,h2 {
+  color: white;
+  padding: 20px;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color:white;
+}
+a:hover{
+  color: black;
+  font-size: 120%;
+}
+
+label{
+  color:white;
+}
+
+fieldset{
+  background-color: transparent;
+}
+
+hr{
+  border: 0;
+}
+input {
+  opacity: 0.3;
+  font: white;
+}

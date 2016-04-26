@@ -20,10 +20,10 @@
       </li>
       <% if logged_in? %>
       <li class="nav-item">
-        <%= link_to "Inbox", inbox_path, class: "nav-link" %>
+        <%= link_to "Rides Requested", inbox_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Outbox", outbox_path, class: "nav-link" %>
+        <%= link_to "Rides Offered", outbox_path, class: "nav-link" %>
       </li>
 
       <% end %>
@@ -39,7 +39,7 @@
       <li class="has-dropdown">
         <a href="/journeys">All Journeys</a>
         <ul class="dropdown">
-        <li><a href="/journeys/new">New Journey</a></li>
+        <li><a href="/journeys/new">Add a Journey</a></li>
         </ul>
       </li>
 

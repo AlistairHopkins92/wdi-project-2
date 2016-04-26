@@ -1,6 +1,7 @@
-<h1>All Journeys</h1>
+<h1>Search Journeys</h1>
 
 <%= search_form_for @q do |f| %>
+  
   <p>
     <%= f.label :starting_point %>
     <%= f.text_field :start_destination_cont %>
@@ -9,10 +10,12 @@
     <%= f.label :date_of_travel %>
     <%= f.text_field :departure_date_cont %>
   </p>
+
   <p>
     <%= f.submit %>
   </p>
 <% end %>
+<h2>All Journeys</h2>
 <div class="card-deck-wrapper">
   <div class="card-deck">
   <%= render @a %>

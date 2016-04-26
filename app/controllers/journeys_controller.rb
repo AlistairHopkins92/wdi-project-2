@@ -18,7 +18,7 @@ class JourneysController < ApplicationController
 
   def create
       @journey = current_user.journeys.new(journey_params)
-      @journey.price = '%.2f' % journey_params.price 
+      # @journey.price = '%.2f' % journey_params.price 
       if @journey.save
           flash[:success] = "Your journey has been listed!"
           redirect_to journeys_path
@@ -38,7 +38,7 @@ class JourneysController < ApplicationController
 
   private
       def journey_params
-          params.require(:journey).permit(:start_destination, :end_destination, :departure_date, :price)
+          params.require(:journey).permit(:start_destination, :end_destination, :departure_date, :price, :free_seats)
       end
 
 end

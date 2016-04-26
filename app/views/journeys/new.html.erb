@@ -24,6 +24,10 @@
     <%= f.label :price_£ %>
     <%= f.text_field :price, class: "form-control", step: 0.01 %>
   </fieldset>
+  <fieldset class="form-group">
+    <%= f.label :free_seats %>
+    <%= f.text_field :free_seats, class: "form-control" %>
+  </fieldset>
   <%= f.submit class: "btn btn-primary" %>
 
 <% end %>

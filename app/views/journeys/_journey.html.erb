@@ -1,6 +1,8 @@
 <div class="card-deck-wrapper">
   <div class="card-deck">
-  <p class="card-title"> <%= link_to ("#{journey.start_destination} to #{journey.end_destination}") , journey_path(journey) %>  <%= journey.departure_date %></p>
+  <p class="card-title"> 
+  <% if journey.free_seats != 0 %>
+  <%= link_to ("#{journey.start_destination} to #{journey.end_destination} #{journey.departure_date} ") , journey_path(journey) %> </p>
+  <% end %>
   </div>
-  <div>Break</div>
 </div>
