@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160423144137) do
+ActiveRecord::Schema.define(version: 20160425165451) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "journey_id"
+    t.string   "agreed_setoff_time"
+    t.text     "notes"
+    t.string   "status"
+    t.integer  "sender_id"
+    t.integer  "receiver_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  add_index "comments", ["journey_id"], name: "index_comments_on_journey_id", using: :btree
 
   create_table "identities", force: :cascade do |t|
     t.integer  "user_id"
@@ -30,11 +43,11 @@ ActiveRecord::Schema.define(version: 20160423144137) do
     t.string   "start_destination"
     t.string   "end_destination"
     t.string   "departure_date"
-    t.decimal  "price",             precision: 8, scale: 2
     t.integer  "free_seats"
     t.integer  "user_id"
-    t.datetime "created_at",                                null: false
-    t.datetime "updated_at",                                null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.decimal  "price"
   end
 
   add_index "journeys", ["user_id"], name: "index_journeys_on_user_id", using: :btree
@@ -63,6 +76,7 @@ ActiveRecord::Schema.define(version: 20160423144137) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "comments", "journeys"
   add_foreign_key "identities", "users"
   add_foreign_key "journeys", "users"
 end

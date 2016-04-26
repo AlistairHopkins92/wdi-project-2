@@ -18,10 +18,10 @@
   </fieldset>
   <fieldset class="form-group">
     <%= f.label :departure_date %>
-    <%= f.text_field :departure_date, class: "form-control" %>
+    <%= f.date_field :departure_date, class: "form-control" %>
   </fieldset>
   <fieldset class="form-group">
-    <%= f.label :price %>
+    <%= f.label :price_£ %>
     <%= f.text_field :price, class: "form-control", step: 0.01 %>
   </fieldset>
   <%= f.submit class: "btn btn-primary" %>

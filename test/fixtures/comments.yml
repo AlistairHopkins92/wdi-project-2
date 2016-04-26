@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  journey_id: 
+  agreed_setoff_time: MyString
+  notes: MyText
+  status: MyString
+  sender_id: 1
+  receiver_id: 1
+
+two:
+  journey_id: 
+  agreed_setoff_time: MyString
+  notes: MyText
+  status: MyString
+  sender_id: 1
+  receiver_id: 1

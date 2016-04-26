@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.2.3"
 
 gem 'foundation-rails' , '~> 5.5.3'
-
+gem 'ransack'
 gem 'devise', '3.4.1'
 gem 'omniauth', '1.2.2'
 gem 'omniauth-facebook', '3.0.0'
@@ -41,6 +41,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'hirb'
 end
 
 group :development do

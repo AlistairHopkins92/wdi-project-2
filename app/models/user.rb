@@ -6,6 +6,12 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
   has_many :identities, dependent: :destroy
   has_many :journeys
+  has_many :comments
+
+  has_many :comments_as_sender, foreign_key: "sender_id", class_name: "Comment"   # Requests that you make to different people
+
+  has_many :comments_as_receiver, foreign_key: "receiver_id", class_name: "Comment"
+
   
   def self.find_for_oauth(auth, signed_in_resource=nil)
     identity = Identity.find_for_oauth(auth)

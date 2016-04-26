@@ -1,0 +1,23 @@
+<div class="card card-block row">
+<% @sender   = User.where(id: comment.sender_id) %>
+<% @receiver = User.where(id: comment.receiver_id) %>
+
+  <h2><%= comment.id %></h2>
+  <h4 class="card-title"><%= comment.journey.try(:title) %></h4>
+  <p class="card-text"><%= comment.notes %></p>
+  <p class="card-text"><%= comment.agreed_setoff_time %></p>
+  <p class="card-text">Status: <%= comment.status %></p>
+  <p class="card-text">Sender:<%= @sender.first.username %> </p>
+  <p class="card-text">Receiver:<%= @receiver.first.username %> </p>
+
+    <div class="actions pull-xs-right">
+      <% if current_page?(action: "outbox") %>
+        <%= link_to "Cancel", cancel_comment_path(comment), class: "btn btn-secondary" %>
+      <% else %>
+        <%= link_to "Reject", reject_comment_path(comment), class: "btn btn-danger" %>
+        <%= link_to "Accept", accept_comment_path(comment), class: "btn btn-success" %>
+      <% end %>
+    </div>
+</div>
+<br>
+<hr>

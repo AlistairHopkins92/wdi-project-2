@@ -1,0 +1,21 @@
+<h1>New Comment</h1>
+
+<%= form_for [@journey, @comment] do |f| %>
+  <% if @comment.errors.any? %>
+    <% for message in @comment.errors.full_messages %>
+      <div class="alert alert-danger" role="alert">
+        <%= message %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <fieldset class="form-group">
+    <%= f.label :notes %>
+    <%= f.text_area :notes, class: "form-control" %>
+  </fieldset>
+  <fieldset class="form-group">
+    <%= f.label :agreed_setoff_time %>
+    <%= f.text_field :agreed_setoff_time, class: "form-control" %>
+  </fieldset>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

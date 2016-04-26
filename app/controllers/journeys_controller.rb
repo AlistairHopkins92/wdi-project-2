@@ -3,7 +3,10 @@ class JourneysController < ApplicationController
 
   def index
   @journeys = Journey.all
+  @q = Journey.search(params[:q])
+  @a = @q.result(distinct: true)
   end
+
 
   def new
   @journey = Journey.new
@@ -15,6 +18,7 @@ class JourneysController < ApplicationController
 
   def create
       @journey = current_user.journeys.new(journey_params)
+      @journey.price = '%.2f' % journey_params.price 
       if @journey.save
           flash[:success] = "Your journey has been listed!"
           redirect_to journeys_path
