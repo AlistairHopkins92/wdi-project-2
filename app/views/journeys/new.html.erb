@@ -12,20 +12,15 @@
   <fieldset class="form-group">
     <%= f.label :start_point %>
     <%= f.text_field :start_destination, class: "form-control" %>
-  </fieldset>
-  <fieldset class="form-group">
     <%= f.label :end_point %>
     <%= f.text_field :end_destination, class: "form-control" %>
-  </fieldset>
-  <fieldset class="form-group">
+
     <%= f.label :departure_date %>
-    <%= f.date_field :departure_date, class: "form-control" %>
-  </fieldset>
-  <fieldset class="form-group">
+    <%= f.date_field :departure_date, class: "form-control"  %>
+
     <%= f.label :price_£ %>
     <%= f.text_field :price, class: "form-control", step: 0.01 %>
-  </fieldset>
-  <fieldset class="form-group">
+
     <%= f.label :free_seats %>
     <%= f.text_field :free_seats, class: "form-control" %>
   </fieldset>

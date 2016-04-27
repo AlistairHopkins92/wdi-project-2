@@ -1,4 +1,5 @@
 <h2>Sign up</h2>
+<div class="medium-8 columns medium-centered" id="login" data-equalizer-watch >
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -35,10 +36,12 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
+</div>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: "btn btn-primary" %>
   </div>
 <% end %>
 
+<div class="medium-8 columns medium-centered" id="journies" data-equalizer-watch >
 <%= render "devise/shared/links" %>
+</div>

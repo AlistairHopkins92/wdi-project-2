@@ -12,7 +12,10 @@
         <li class="card-text">Username: <%= @user.username %></li>
       </ul>
       <div>
-        <div class="card-text">Journeys Listed:<%= render @user.journeys %></div>
+        <div class="card-text">
+        <li>Journeys Listed:</li>
+        <%= render @user.journeys %>
+        </div>
       </div>
     </div>
   </div>

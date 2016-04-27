@@ -23,10 +23,10 @@ body.homepage {
   text-align: center;
 }
 
-h1,h2 {
+h1,h2,h3 {
   color: white;
-  padding: 10px;
-  padding-top: 20px;
+  padding-bottom: 40px;
+  padding: 30px;
   font-family: 'Copperplate Gothic Light';
 }
 
@@ -41,7 +41,7 @@ a:hover{
   font-size: 110%;
 }
 
-label{
+label, em{
   color:white;
 }
 
@@ -68,7 +68,8 @@ input[type="date"], input[type="date"]:focus,
 
 
 
-input.btn{
+
+input.btn {
   color:white;
   opacity: 0.7;
   background: #CDC9C9;
@@ -77,8 +78,20 @@ input.btn{
   font-size: 20px;
   padding: 10px;
 }
+.actions {
+  border-radius: 12px;
+  padding: 20px;
+}
 
-
+input.reg {
+  color:white;
+  opacity: 0.7;
+  background: #CDC9C9;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 10px;
+}
 
 h5 {
   font-size: 60px;
@@ -94,6 +107,7 @@ h5 {
   padding-top:40px;
   padding-bottom: 20px;
   border-radius: 30px;
+  margin-bottom: 50px;
 }
 #journiesuser {
   background-color: rgba(123,123,123,1);
@@ -102,10 +116,44 @@ h5 {
   border-radius: 30px;
   text-align: left;
 }
-.flash-message {
-  color: white;
+
+#login {
+  background-color: rgba(123,123,123,1);
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
 }
 
+.flash-message {
+  color: white;
+  font-size: 30px;
+}
+
+#footer{
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: #545454;
+}
+
+img.logo {
+  padding-top: 80px;
+}
+
+.medium-2.columns.tyre-left {
+  background-image: image-url("logoleft.png");
+  height: 620px;
+}
+
+.medium-2.columns.tyre-right {
+  background-image: image-url("logoright.png");
+  height: 620px;
+}
 
 
 
