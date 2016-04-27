@@ -10,6 +10,7 @@ body {
   width:100%;
   background-attachment: fixed;
   text-align: center;
+  font-family: 'Helvetica Neue';
 }
 
 body.homepage {
@@ -27,12 +28,13 @@ h1,h2,h3 {
   color: white;
   padding-bottom: 40px;
   padding: 30px;
-  font-family: 'Copperplate Gothic Light';
+  font-family: 'Belgrano', serif;
 }
 
 p, li, a {
   color: white;
   list-style: none;
+  font-family: 'Helvetica Neue'
 }
 
 
@@ -43,6 +45,7 @@ a:hover{
 
 label, em{
   color:white;
+  font-family: 'Helvetica Neue'
 }
 
 fieldset{
@@ -60,7 +63,7 @@ input[type="date"], input[type="date"]:focus,
  textarea, textarea:focus {
   background: rgba(255,255,255,0.6);
   color: white;
-  font-family: 'Copperplate Gothic Light';
+  font-family: 'Helvetica Neue';
   border: none;
   border-radius: 2px;
   outline: none;
@@ -77,6 +80,7 @@ input.btn {
   border-radius: 12px;
   font-size: 20px;
   padding: 10px;
+  font-family: 'Helvetica Neue';
 }
 .actions {
   border-radius: 12px;
@@ -100,7 +104,7 @@ h5 {
   text-align: center;
   padding-top: 50px;
   padding-left: 2%;
-  font-family: 'Copperplate Gothic Light';
+  font-family: 'Belgrano', serif;
 }
 #journies {
   background-color: rgba(123,123,123,1);
