@@ -1,5 +1,7 @@
 
-<div class="medium-4 columns medium-centered" id="journies" data-equalizer-watch>
+
+
+<div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
   <div class="card card-block row">
     <% @sender   = User.where(id: comment.sender_id) %>
     <% @receiver = User.where(id: comment.receiver_id) %>
@@ -18,15 +20,14 @@
 
 <div class="actions pull-xs-right">
   <% if current_page?(action: "outbox") %>
-  <div class="medium-4 columns medium-centered" id="journies" data-equalizer-watch>
+  <div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
     <%= link_to "Cancel", cancel_comment_path(comment), class: "btn btn-secondary" %>
   </div>
   <% else %>
-  <div class="medium-4 columns medium-centered" id="journies" data-equalizer-watch>
+  <div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
     <%= link_to "Reject", reject_comment_path(comment), class: "btn btn-danger" %>
     <%= link_to "Accept", accept_comment_path(comment), class: "btn btn-success" %>
   </div>
   <% end %>
 </div>
-
 
