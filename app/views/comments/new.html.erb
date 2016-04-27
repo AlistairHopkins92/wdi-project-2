@@ -9,6 +9,7 @@
     <% end %>
   <% end %>
 
+  <div class="medium-8 columns medium-centered" id="journies" data-equalizer-watch>
   <fieldset class="form-group">
     <%= f.label :notes %>
     <%= f.text_area :notes, class: "form-control" %>
@@ -17,5 +18,7 @@
     <%= f.label :agreed_setoff_time %>
     <%= f.text_field :agreed_setoff_time, class: "form-control" %>
   </fieldset>
+  </div>
+
   <%= f.submit class: "btn btn-primary" %>
 <% end %>

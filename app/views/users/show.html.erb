@@ -1,18 +1,18 @@
 <h1>User: <%= @user.username %></h1>
 <div class="medium-8 columns medium-centered" id="journiesuser" data-equalizer-watch >
   <div class="card-deck-wrapper">
+    <div class="mugshot">
+      <%= image_tag @user.image %>
+    </div>
     <div class="card-deck">
-      <ul>
-        <li class="card-text">Email: <%= @user.email %></li>
-        <li class="card-text">Username: <%= @user.username %></li>
+    <ul>
         <li class="card-text">First Name: <%= @user.first_name %></li>
         <li class="card-text">Last Name: <%= @user.last_name %></li>
+        <li class="card-text">Email: <%= @user.email %></li>
+        <li class="card-text">Username: <%= @user.username %></li>
       </ul>
       <div>
         <div class="card-text">Journeys Listed:<%= render @user.journeys %></div>
-        <div class="mugshot">
-          <%= image_tag @user.image %>
-        </div>
       </div>
     </div>
   </div>

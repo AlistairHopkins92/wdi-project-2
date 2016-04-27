@@ -11,15 +11,16 @@
     <ul class="right">
 
       <li class="has-dropdown">
-        <a href="/journeys">All Journeys</a>
+        <a><i class="fa fa-car" aria-hidden="true"></i></a>
         <ul class="dropdown">
+          <li><a href="/journeys">All Journeys</a></li>
           <li><a href="/journeys/new">Add a Journey</a></li>
         </ul>
       </li>
 
       <% if logged_in? %>
       <li class="has-dropdown">
-        <a href="#">Rides</a>
+        <a><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
         <ul class="dropdown">
           <li class="nav-item">
             <%= link_to "Rides Offered", inbox_path, class: "nav-link" %>
@@ -32,7 +33,7 @@
       <% end %>
 
       <li class="has-dropdown">
-        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+        <a><i class="fa fa-cog" aria-hidden="true"></i></a>
         <ul class="dropdown">
           <% if !logged_in? %>
           <li><%= link_to "Login", new_user_session_path %></li>

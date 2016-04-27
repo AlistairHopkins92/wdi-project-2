@@ -8,6 +8,7 @@
     <% end %>
   <% end %>
 
+  <div class="medium-8 columns medium-centered" id="journies" data-equalizer-watch>
   <fieldset class="form-group">
     <%= f.label :start_point %>
     <%= f.text_field :start_destination, class: "form-control" %>
@@ -29,5 +30,6 @@
     <%= f.text_field :free_seats, class: "form-control" %>
   </fieldset>
   <%= f.submit class: "btn btn-primary" %>
+  </div>
 
 <% end %>

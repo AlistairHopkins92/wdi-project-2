@@ -57,12 +57,13 @@ input[type="text"],input[type="text"]:focus,
 input[type="email"],input[type="email"]:focus,
 input[type="password"], input[type="password"]:focus,
 input[type="date"], input[type="date"]:focus,
- textarea {
+ textarea, textarea:focus {
   background: rgba(255,255,255,0.6);
   color: white;
   font-family: 'Copperplate Gothic Light';
   border: none;
   border-radius: 2px;
+  outline: none;
 }
 
 
@@ -107,22 +108,23 @@ h5 {
 
 
 
-.card-deck {
-  div {
-    display: inline-block;
-    width: 100%;
 
-    .card-text {
-      width: 60%;
-    }
+// .card-deck {
+//   div {
+//     display: inline-block;
+//     width: 100%;
 
-    .mugshot {
-      width: 35%;
+//     .card-text {
+//       width: 60%;
+//     }
 
-      img {
-        height: 100px;
-        width:  100px;
-      }
-    }
-  }
-}
+//     .mugshot {
+//       width: 35%;
+
+//       img {
+//         height: 100px;
+//         width:  100px;
+//       }
+//     }
+//   }
+// }
