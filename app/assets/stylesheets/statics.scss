@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-color: rgba(123,123,123,0.4);
+  background-color: #CDC9C9;
   background-repeat: no-repeat;
   // background-position: center center;
   background-size: 100%;
@@ -25,19 +25,20 @@ body.homepage {
 
 h1,h2 {
   color: white;
-  padding: 20px;
+  padding: 10px;
+  padding-top: 20px;
+  font-family: 'Copperplate Gothic Light';
 }
 
-p {
+p, li, a {
   color: white;
+  list-style: none;
 }
 
-a {
-  color:white;
-}
+
 a:hover{
-  color: black;
-  font-size: 120%;
+  color: #CDC9C9;
+  font-size: 110%;
 }
 
 label{
@@ -57,8 +58,11 @@ input[type="email"],input[type="email"]:focus,
 input[type="password"], input[type="password"]:focus,
 input[type="date"], input[type="date"]:focus,
  textarea {
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.6);
   color: white;
+  font-family: 'Copperplate Gothic Light';
+  border: none;
+  border-radius: 2px;
 }
 
 
@@ -66,23 +70,59 @@ input[type="date"], input[type="date"]:focus,
 input.btn{
   color:white;
   opacity: 0.7;
-  background: grey;
+  background: #CDC9C9;
   border: none;
   border-radius: 12px;
   font-size: 20px;
   padding: 10px;
 }
 
+
+
 h5 {
-  font-size: 50px;
+  font-size: 60px;
   position: fixed;
   color: white;
   text-align: center;
   padding-top: 50px;
+  padding-left: 2%;
+  font-family: 'Copperplate Gothic Light';
 }
 #journies {
   background-color: rgba(123,123,123,1);
   padding-top:40px;
   padding-bottom: 20px;
   border-radius: 30px;
+}
+#journiesuser {
+  background-color: rgba(123,123,123,1);
+  padding-top:40px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  text-align: left;
+}
+.flash-message {
+  color: white;
+}
+
+
+
+.card-deck {
+  div {
+    display: inline-block;
+    width: 100%;
+
+    .card-text {
+      width: 60%;
+    }
+
+    .mugshot {
+      width: 35%;
+
+      img {
+        height: 100px;
+        width:  100px;
+      }
+    }
+  }
 }

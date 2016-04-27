@@ -13,7 +13,8 @@ u1 = User.create!(email: "oholdme@night.com",
                   password: "password", 
                   username: "oholdme", 
                   first_name: "Ollie", 
-                  last_name: "Holden")
+                  last_name: "Holden",
+                  image: "https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12239642_10207682695402759_8883733882515923248_n.jpg?oh=0508e4ef8506ff03b20d5f613cd711a8&oe=57ACFC10")
             
 u2 = User.create!(email: "car@line.com", 
                   password: "password", 

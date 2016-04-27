@@ -16,6 +16,9 @@
 //= require_tree .
 
 $(function(){ 
-  $(document).foundation(); 
-  console.log("foundationing")
+  $(document).foundation({
+    topbar: {
+      back_text: false
+    }
+  }); 
 });
