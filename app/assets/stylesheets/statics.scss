@@ -71,7 +71,7 @@ input[type="date"], input[type="date"]:focus,
 
 input.btn {
   color:white;
-  opacity: 0.7;
+  opacity: 1;
   background: #CDC9C9;
   border: none;
   border-radius: 12px;
@@ -160,8 +160,11 @@ img.logo {
   background-position: 50%, 50%;
   opacity: 0.7;
 }
-
-
+span{
+    display:inline-block;    
+    width:33%;
+    text-align:center;
+}
 
 // .card-deck {
 //   div {
