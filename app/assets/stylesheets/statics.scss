@@ -11,6 +11,7 @@ body {
   background-attachment: fixed;
   text-align: center;
   font-family: 'Helvetica Neue';
+  font-size: 22px;
 }
 
 body.homepage {
@@ -34,7 +35,8 @@ h1,h2,h3 {
 p, li, a {
   color: white;
   list-style: none;
-  font-family: 'Helvetica Neue'
+  font-family: 'Helvetica Neue';
+  font-size: 22px;
 }
 
 
@@ -45,7 +47,8 @@ a:hover{
 
 label, em{
   color:white;
-  font-family: 'Helvetica Neue'
+  font-family: 'Helvetica Neue';
+  font-size: 22px;
 }
 
 fieldset{
@@ -75,7 +78,7 @@ input[type="date"], input[type="date"]:focus,
 input.btn {
   color:white;
   opacity: 1;
-  background: #CDC9C9;
+  background: #545454;
   border: none;
   border-radius: 12px;
   font-size: 20px;
@@ -83,8 +86,8 @@ input.btn {
   font-family: 'Helvetica Neue';
 }
 .actions {
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 input.reg {
@@ -94,7 +97,7 @@ input.reg {
   border: none;
   border-radius: 12px;
   font-size: 20px;
-  padding: 10px;
+  padding: 15px;
 }
 
 h5 {
@@ -108,24 +111,36 @@ h5 {
 }
 #journies {
   background-color: rgba(123,123,123,1);
-  padding-top:20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding: 20px;
   border-radius: 15px;
   margin-bottom: 50px;
+  margin-top: 10px;
 }
+
+#journiesclear {
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  border-color: white;
+}
+
 #journiesuser {
   background-color: rgba(123,123,123,1);
-  padding-top:40px;
-  padding-bottom: 20px;
+  padding-top:10px;
+  padding-bottom: 10px;
   border-radius: 15px;
   text-align: left;
 }
 
 #login {
   background-color: rgba(123,123,123,1);
-  padding: 40px;
+  padding: 20px;
   border-radius: 15px;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .flash-message {
@@ -176,6 +191,20 @@ span{
     display:inline-block;    
     width:15%;
     text-align:center;
+}
+
+.top-bar-section .has-dropdown > a {
+  width: 130px;
+  }
+
+  .top-bar-section .has-dropdown > a:after {
+      border-top-style: none;
+  }
+.cra{
+  background-color: #545454;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
 }
 
 // .card-deck {

@@ -5,7 +5,7 @@
 </strong>
 <div class="medium-8 columns medium-offset-2" data-equalizer-watch >
 
-  <div class="row" data-equalizer >
+<!--   <div class="row" data-equalizer > -->
     <h2>Log in</h2>
     <div class="medium-12 columns"  id="login" data-equalizer-watch >
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -16,7 +16,10 @@
         <%= f.label :password %><br />
         <%= f.password_field :password, class: "form-control" %>
       </div>
-    </div>
+      <div class="actions">
+        <%= f.submit "Log in", class: "btn btn-primary" %>
+<!--       </div>
+ -->    </div>
   </div>
   <%# if devise_mapping.rememberable? -%>
   <!-- <div class="field"> -->
@@ -25,9 +28,6 @@
   <!-- </div> -->
   <%# end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in", class: "btn btn-primary" %>
-  </div>
   <% end %>
   <div class="medium-12 columns" id="journies" data-equalizer-watch >
     <%= render "devise/shared/links" %>

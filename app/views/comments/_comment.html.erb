@@ -7,27 +7,27 @@
     <% @receiver = User.where(id: comment.receiver_id) %>
 
     
-    <p class="card-text">Start Point: <%= comment.journey.start_destination %></p>
-    <p class="card-text">End Point: <%= comment.journey.end_destination %></p>
+    <h1 class="card-text"><%= comment.journey.start_destination %> to <%= comment.journey.end_destination %></h1>
     <p class="card-text">Notes: <%= comment.notes %></p>
     <p class="card-text">Potential set off time: <%= comment.agreed_setoff_time %></p>
     <p class="card-text">Status: <%= comment.status %></p>
     <p class="card-text">Sender:<%= @sender.first.username %> </p>
     <p class="card-text">Receiver:<%= @receiver.first.username %> </p>
+
+
+
+
+    <div class="actions pull-xs-right">
+      <% if current_page?(action: "outbox") %>
+      <div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
+        <%= link_to "Remove Request", cancel_comment_path(comment), class: "cra" %>
+      </div>
+      <% else %>
+      <div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
+        <%= link_to "Reject Request", reject_comment_path(comment), class: "cra" %>
+        <%= link_to "Accept Request", accept_comment_path(comment), class: "cra" %>
+      </div>
+      <% end %>
+    </div>
   </div>
 </div>
-
-
-<div class="actions pull-xs-right">
-  <% if current_page?(action: "outbox") %>
-  <div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
-    <%= link_to "Cancel", cancel_comment_path(comment), class: "btn btn-secondary" %>
-  </div>
-  <% else %>
-  <div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
-    <%= link_to "Reject", reject_comment_path(comment), class: "btn btn-danger" %>
-    <%= link_to "Accept", accept_comment_path(comment), class: "btn btn-success" %>
-  </div>
-  <% end %>
-</div>
-
