@@ -1,6 +1,9 @@
+<strong class="show-for-medium-up">
 <div class="medium-2 columns tyre-left"  >
   <!-- &nbsp; -->
 </div>
+</strong>
+
 <div class="medium-8 columns medium-offset-2" data-equalizer-watch >
 
 <h2>Sign up</h2>
@@ -41,6 +44,12 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.text_field :image, autofocus: true %>
+  </div>
+
 </div>
   <div class="actions">
     <%= f.submit "Sign up", class: "btn btn-primary" %>
@@ -51,6 +60,8 @@
 <%= render "devise/shared/links" %>
 </div>
 </div>
+<strong class="show-for-medium-up">
 <div class="medium-2 columns tyre-right"  >
   <!-- &nbsp; -->
 </div>
+</strong>

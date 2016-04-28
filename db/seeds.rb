@@ -131,11 +131,50 @@ j13 = u7.journeys.create!( start_destination: "London",
                           departure_date: "02/05/16",
                           price: 9.00,
                           free_seats: 1)
+j14 = u8.journeys.create!( start_destination: "Salford",
+                          end_destination: "Liverpool",
+                          departure_date: "4/05/16",
+                          price: 6.00,
+                          free_seats: 3)
+j15 = u6.journeys.create!( start_destination: "Cardiff",
+                          end_destination: "Bristol",
+                          departure_date: "02/05/16",
+                          price: 6.00,
+                          free_seats: 5)
+j16 = u7.journeys.create!( start_destination: "London",
+                          end_destination: "Oxford",
+                          departure_date: "04/05/16",
+                          price: 14.00,
+                          free_seats: 1)
+j17 = u4.journeys.create!( start_destination: "Portsmouth",
+                          end_destination: "Southampton",
+                          departure_date: "12/05/16",
+                          price: 8.00,
+                          free_seats: 1)
+j18 = u4.journeys.create!( start_destination: "Sheffield",
+                          end_destination: "Bristol",
+                          departure_date: "01/05/16",
+                          price: 16.00,
+                          free_seats: 3)
+j19 = u3.journeys.create!( start_destination: "Oxford",
+                          end_destination: "Hull",
+                          departure_date: "05/05/16",
+                          price: 7.00,
+                          free_seats: 1)
 
 
 c1 = Comment.create!( journey_id: j1.id,
                          agreed_setoff_time: "between 6am and 7am",
                          notes: "Can I bring my dog?",
-                         sender_id: u1.id,
+                         sender_id: u3.id,
+                         receiver_id: u1.id)
+c2 = Comment.create!( journey_id: j1.id,
+                         agreed_setoff_time: "Whenevers good for you",
+                         notes: "Can we listen to ABBA?",
+                         sender_id: u3.id,
                          receiver_id: u2.id)
-
+c3 = Comment.create!( journey_id: j7.id,
+                         agreed_setoff_time: "Is lunchtime ok?",
+                         notes: "Is there space for my golf clubs?",
+                         sender_id: u1.id,
+                         receiver_id: u3.id)

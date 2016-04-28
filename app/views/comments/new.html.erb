@@ -1,38 +1,40 @@
 
 
 <%= form_for [@journey, @comment] do |f| %>
-  <% if @comment.errors.any? %>
-    <% for message in @comment.errors.full_messages %>
-      <div class="alert alert-danger" role="alert">
-        <%= message %>
-      </div>
-    <% end %>
-  <% end %>
+<% if @comment.errors.any? %>
+<% for message in @comment.errors.full_messages %>
+<div class="alert alert-danger" role="alert">
+  <%= message %>
+</div>
+<% end %>
+<% end %>
 
 
-
+<strong class="show-for-medium-up">
   <div class="medium-2 columns tyre-left"  >
     <!-- &nbsp; -->
   </div>
-
-  <div class="medium-8 medium-offset-2 columns" data-equalizer-watch >
+</strong>
+<div class="medium-8 medium-offset-2 columns" data-equalizer-watch >
   <h1>Request Journey</h1>
   <div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
-  <fieldset class="form-group">
-    <%= f.label :notes %>
-    <%= f.text_area :notes, class: "form-control" %>
-  </fieldset>
-  <fieldset class="form-group">
-    <%= f.label :agreed_setoff_time %>
-    <%= f.text_field :agreed_setoff_time, class: "form-control" %>
-  </fieldset>
-  
-  <%= f.submit class: "btn btn-primary" %>
+    <fieldset class="form-group">
+      <%= f.label :notes %>
+      <%= f.text_area :notes, class: "form-control" %>
+    </fieldset>
+    <fieldset class="form-group">
+      <%= f.label :agreed_setoff_time %>
+      <%= f.text_field :agreed_setoff_time, class: "form-control" %>
+    </fieldset>
+
+    <%= f.submit class: "btn btn-primary" %>
   </div>
-  </div>
+</div>
+<strong class="show-for-medium-up">
   <div class="medium-2 columns tyre-right"  >
     <!-- &nbsp; -->
   </div>
+</strong>
 
-  
+
 <% end %>

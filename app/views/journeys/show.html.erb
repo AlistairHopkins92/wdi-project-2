@@ -1,26 +1,27 @@
-
-<div class="medium-2 columns tyre-left"  >
-  <!-- &nbsp; -->
-</div>
-
+<strong class="show-for-medium-up">
+  <div class="medium-2 columns tyre-left"  >
+    <!-- &nbsp; -->
+  </div>
+</strong>
 <div class="medium-8 medium-offset-2 columns" data-equalizer-watch >
-<h1><%= @journey.start_destination %> to <%= @journey.end_destination %></h1>
-<h3>With <%= @journey.user.first_name %></h3>
-<div class="medium-12  columns medium-centered" id="journies" data-equalizer-watch >
-<div class="card-deck-wrapper">
-  <div class="card-deck">
-    <p class="card-text">Start point: <%= @journey.start_destination %></p>
-    <p class="card-text">End point: <%= @journey.end_destination %></p>
-    <p class="card-text">Departure Date: <%= @journey.departure_date %></p>
-    <p class="card-text">Price: £<%= @journey.price %>0</p>
-    <p class="card-text">Free Seats: <%= @journey.free_seats %></p>
-    <p class="card-text">Driver: <%= link_to @journey.user.username, @journey.user %></p>
-    <%= link_to "Comment", new_journey_comment_path(@journey), class: "btn-btn-primary" %>
+  <h1><%= @journey.start_destination %> to <%= @journey.end_destination %></h1>
+  <h3>With <%= @journey.user.first_name %></h3>
+  <div class="medium-12  columns medium-centered" id="journies" data-equalizer-watch >
+    <div class="card-deck-wrapper">
+      <div class="card-deck">
+        <p class="card-text">Start point: <%= @journey.start_destination %></p>
+        <p class="card-text">End point: <%= @journey.end_destination %></p>
+        <p class="card-text">Departure Date: <%= @journey.departure_date %></p>
+        <p class="card-text">Price: £<%= @journey.price %>0</p>
+        <p class="card-text">Free Seats: <%= @journey.free_seats %></p>
+        <p class="card-text">Driver: <%= link_to @journey.user.username, @journey.user %></p>
+        <%= link_to "Comment", new_journey_comment_path(@journey), class: "btn-btn-primary" %>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-</div>
-
-<div class="medium-2 columns tyre-right"  >
-  <!-- &nbsp; -->
-</div>
+<strong class="show-for-medium-up">
+  <div class="medium-2 columns tyre-right"  >
+    <!-- &nbsp; -->
+  </div>
+</strong>

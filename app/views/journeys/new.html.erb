@@ -1,43 +1,46 @@
-<div class="medium-2 columns tyre-left"  >
-  <!-- &nbsp; -->
-</div>
-
+<strong class="show-for-medium-up">
+  <div class="medium-2 columns tyre-left"  >
+    <!-- &nbsp; -->
+  </div>
+</strong>
 <div class="medium-8 columns medium-offset-2" data-equalizer-watch >
 
-<h1>List Journey</h1>
+  <h1>List Journey</h1>
 
-<div class="medium-12 columns" data-equalizer-watch >
-  <%= form_for @journey do |f| %>
-  <% if @journey.errors.any? %>
-  <% for message in @journey.errors.full_messages %>
-  <div class="alert alert-danger" role="alert">
-    <%= message %>
+  <div class="medium-12 columns" data-equalizer-watch >
+    <%= form_for @journey do |f| %>
+    <% if @journey.errors.any? %>
+    <% for message in @journey.errors.full_messages %>
+    <div class="alert alert-danger" role="alert">
+      <%= message %>
+    </div>
+    <% end %>
+    <% end %>
   </div>
+
+  <div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
+    <fieldset class="form-group">
+      <%= f.label :start_point %>
+      <%= f.text_field :start_destination, class: "form-control" %>
+      <%= f.label :end_point %>
+      <%= f.text_field :end_destination, class: "form-control" %>
+
+      <%= f.label :departure_date %>
+      <%= f.date_field :departure_date, class: "form-control"  %>
+
+      <%= f.label :price_£ %>
+      <%= f.text_field :price, class: "form-control", step: 0.01 %>
+
+      <%= f.label :free_seats %>
+      <%= f.text_field :free_seats, class: "form-control" %>
+    </fieldset>
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+
   <% end %>
-  <% end %>
 </div>
-
-<div class="medium-12 columns medium-centered" id="journies" data-equalizer-watch>
-  <fieldset class="form-group">
-    <%= f.label :start_point %>
-    <%= f.text_field :start_destination, class: "form-control" %>
-    <%= f.label :end_point %>
-    <%= f.text_field :end_destination, class: "form-control" %>
-
-    <%= f.label :departure_date %>
-    <%= f.date_field :departure_date, class: "form-control"  %>
-
-    <%= f.label :price_£ %>
-    <%= f.text_field :price, class: "form-control", step: 0.01 %>
-
-    <%= f.label :free_seats %>
-    <%= f.text_field :free_seats, class: "form-control" %>
-  </fieldset>
-  <%= f.submit class: "btn btn-primary" %>
-</div>
-
-<% end %>
-</div>
-<div class="medium-2 columns tyre-right"  >
-  <!-- &nbsp; -->
-</div>
+<strong class="show-for-medium-up">
+  <div class="medium-2 columns tyre-right"  >
+    <!-- &nbsp; -->
+  </div>
+</strong>
