@@ -58,7 +58,7 @@ u7 = User.create!(email: "bella@bella.com",
                   last_name: "Taylor",
                   image: "https://scontent-lhr3-1.xx.fbcdn.net/hphotos-prn2/v/t1.0-9/555974_562708572997_1216767777_n.jpg?oh=5503bbcf5a58ba37fcd7e20128028dc4&oe=57AFF913")
 
-u7 = User.create!(email: "tr@cy.com", 
+u8 = User.create!(email: "tr@cy.com", 
                   password: "password", 
                   username: "tracy", 
                   first_name: "Tracy", 
