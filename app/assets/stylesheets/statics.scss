@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-color: #CDC9C9;
+  background-color: #A7A7A7;
   background-repeat: no-repeat;
   // background-position: center center;
   background-size: 100%;
@@ -150,6 +150,10 @@ img.logo {
 }
 
 .medium-2.columns.tyre-left {
+  position: fixed;
+  left: 20px;
+  top: 0;
+  z-index: -1;
   background-image: image-url("logoleft.png");
   height: 620px;
   background-repeat: repeat-y;
@@ -158,6 +162,10 @@ img.logo {
 }
 
 .medium-2.columns.tyre-right {
+  position: fixed;
+  right: 20px;
+  top: 0;
+  z-index: -1;
   background-image: image-url("logoright.png");
   height: 620px;
   background-repeat: repeat-y;

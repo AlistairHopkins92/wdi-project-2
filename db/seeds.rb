@@ -20,25 +20,29 @@ u2 = User.create!(email: "car@line.com",
                   password: "password", 
                   username: "thereddevil", 
                   first_name: "Caroline", 
-                  last_name: "Benn")
+                  last_name: "Benn",
+                  image: "https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/11986309_10156089835410717_4357400115308770694_n.jpg?oh=3155025415aff767016e26bf38840894&oe=57A27204")
 
 u3 = User.create!(email: "ali@ali.com", 
                   password: "password", 
                   username: "coolgu123", 
                   first_name: "Alistair", 
-                  last_name: "Hopkins")
+                  last_name: "Hopkins",
+                  image: "https://scontent-lhr3-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/945089_10151735137480874_283854846_n.jpg?oh=031b2d990eda499b4dedc556a131a78c&oe=57AC7733")
 
 u4 = User.create!(email: "chanse@chanse.com", 
                   password: "password", 
                   username: "norfolkandchanse", 
                   first_name: "Chanse", 
-                  last_name: "Campbell")
+                  last_name: "Campbell",
+                  image: "https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/10487341_10152623610161057_701642286112268607_n.jpg?oh=119efb67d959ec6c823b5f44011e63ca&oe=57B0B25A")
 
 u5 = User.create!(email: "paddy@paddy.com", 
                   password: "password", 
                   username: "notirish", 
                   first_name: "Paddy", 
-                  last_name: "de Klee")
+                  last_name: "de Klee",
+                  image: "https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/11391247_10152763205312493_2292968833916584004_n.jpg?oh=5e35d99a5df853966f054882ddcdfeb5&oe=579E9CD8")
 
 
 
