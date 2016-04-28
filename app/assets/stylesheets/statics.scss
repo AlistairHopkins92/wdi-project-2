@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-color: #A7A7A7;
+  background-color: #f0f8ff;
   background-repeat: no-repeat;
   // background-position: center center;
   background-size: 100%;
@@ -39,7 +39,7 @@ p, li, a {
 
 
 a:hover{
-  color: #CDC9C9;
+  color: #42525e;
   font-size: 110%;
 }
 
@@ -75,7 +75,7 @@ input[type="date"], input[type="date"]:focus,
 input.btn {
   color:white;
   opacity: 1;
-  background: #CDC9C9;
+  background: #A6C0C5;
   border: none;
   border-radius: 12px;
   font-size: 20px;
@@ -90,7 +90,7 @@ input.btn {
 input.reg {
   color:white;
   opacity: 0.7;
-  background: #CDC9C9;
+  background: #A6C0C5;
   border: none;
   border-radius: 12px;
   font-size: 20px;
@@ -107,14 +107,25 @@ h5 {
   font-family: 'Belgrano', serif;
 }
 #journies {
-  background-color: rgba(123,123,123,1);
+  background-color: #42525e;
   padding-top:20px;
   padding-bottom: 20px;
   border-radius: 15px;
   margin-bottom: 50px;
 }
+
+#journies1 {
+  background-color: #42525e;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
 #journiesuser {
-  background-color: rgba(123,123,123,1);
+  background-color: #42525e;
   padding-top:40px;
   padding-bottom: 20px;
   border-radius: 15px;
@@ -122,7 +133,7 @@ h5 {
 }
 
 #login {
-  background-color: rgba(123,123,123,1);
+  background-color: #42525e;
   padding: 40px;
   border-radius: 15px;
   text-align: center;
@@ -131,6 +142,7 @@ h5 {
 .flash-message {
   color: white;
   font-size: 30px;
+  font-family: 'Belgrano', serif;
 }
 
 #footer{
@@ -142,7 +154,7 @@ h5 {
     color: white;
     text-align: center;
     width: 100%;
-    background-color: #545454;
+    background-color: grey;
 }
 
 img.logo {
@@ -176,6 +188,21 @@ span{
     display:inline-block;    
     width:15%;
     text-align:center;
+}
+
+.top-bar-section .has-dropdown > a {
+    width: 130px;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    border-top-style: none;
+}
+
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+    background: grey;
+    color: #FFFFFF;
+    text-align: right;
 }
 
 // .card-deck {
