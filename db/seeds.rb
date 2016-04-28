@@ -44,7 +44,26 @@ u5 = User.create!(email: "paddy@paddy.com",
                   last_name: "de Klee",
                   image: "https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/11391247_10152763205312493_2292968833916584004_n.jpg?oh=5e35d99a5df853966f054882ddcdfeb5&oe=579E9CD8")
 
+u6 = User.create!(email: "john@john.com", 
+                  password: "password", 
+                  username: "ratherfrench", 
+                  first_name: "John", 
+                  last_name: "Segar",
+                  image: "https://scontent-lhr3-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/993680_356488441155327_1346003203_n.jpg?oh=0a8f7a65897c7e18cc6046dda1484e69&oe=57AF95B4")
 
+u7 = User.create!(email: "bella@bella.com", 
+                  password: "password", 
+                  username: "hellsbells", 
+                  first_name: "Bella", 
+                  last_name: "Taylor",
+                  image: "https://scontent-lhr3-1.xx.fbcdn.net/hphotos-prn2/v/t1.0-9/555974_562708572997_1216767777_n.jpg?oh=5503bbcf5a58ba37fcd7e20128028dc4&oe=57AFF913")
+
+u7 = User.create!(email: "tr@cy.com", 
+                  password: "password", 
+                  username: "tracy", 
+                  first_name: "Tracy", 
+                  last_name: "Wu",
+                  image: "https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfl1/v/t1.0-9/10391366_10152555293322952_8230960338184159777_n.jpg?oh=d57939036df0eb8585a32a59c0ade59a&oe=579C53B3")
 
 
 j1 = u1.journeys.create!( start_destination: "Manchester",
@@ -97,10 +116,26 @@ j10 = u5.journeys.create!( start_destination: "Bristol",
                           departure_date: "06/05/16",
                           price: 8.00,
                           free_seats: 1)
+j11 = u5.journeys.create!( start_destination: "Portsmouth",
+                          end_destination: "Hull",
+                          departure_date: "12/05/16",
+                          price: 22.00,
+                          free_seats: 1)
+j12 = u6.journeys.create!( start_destination: "Cardiff",
+                          end_destination: "Bristol",
+                          departure_date: "01/05/16",
+                          price: 6.00,
+                          free_seats: 5)
+j13 = u7.journeys.create!( start_destination: "London",
+                          end_destination: "Hull",
+                          departure_date: "02/05/16",
+                          price: 9.00,
+                          free_seats: 1)
+
 
 c1 = Comment.create!( journey_id: j1.id,
                          agreed_setoff_time: "between 6am and 7am",
-                         notes: "No dogs allowed",
+                         notes: "Can I bring my dog?",
                          sender_id: u1.id,
                          receiver_id: u2.id)
 
