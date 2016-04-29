@@ -26,13 +26,15 @@ The box game is built with HTML/CSS and Rails, it used the following librairies:
  
 
 ###Screen Shots:
-Homepage
+Homepage:
 ![home](https://cloud.githubusercontent.com/assets/17616209/14914257/8ad098ca-0e00-11e6-9925-10891efacfb1.png)
-Sample Page
+Sample Page:
 ![page](https://cloud.githubusercontent.com/assets/17616209/14914270/9bc87ab2-0e00-11e6-964d-6e13d91d9de0.png)
-Home Page Responsive
+Home Page Responsive:
+
 ![responsivehome](https://cloud.githubusercontent.com/assets/17616209/14914281/a88e9e70-0e00-11e6-9582-7805022b6178.png)
-Sample Page Responsive
+Sample Page Responsive:
+
 ![responsivepage](https://cloud.githubusercontent.com/assets/17616209/14914287/b31272fe-0e00-11e6-8dee-56e74cfda6a3.png)
 
 
