@@ -10,7 +10,7 @@ body {
   width:100%;
   background-attachment: fixed;
   text-align: center;
-  font-family: 'Helvetica Neue';
+  font-family: 'Belgrano', serif;
   font-size: 22px;
 }
 
@@ -35,7 +35,7 @@ h1,h2,h3 {
 p, li, a {
   color: white;
   list-style: none;
-  font-family: 'Helvetica Neue';
+  font-family: 'Belgrano', serif;
   font-size: 22px;
 }
 
@@ -47,7 +47,7 @@ a:hover{
 
 label, em{
   color:white;
-  font-family: 'Helvetica Neue';
+  font-family: 'Belgrano', serif;
   font-size: 22px;
 }
 
@@ -66,7 +66,7 @@ input[type="date"], input[type="date"]:focus,
  textarea, textarea:focus {
   background: rgba(255,255,255,0.6);
   color: white;
-  font-family: 'Helvetica Neue';
+  font-family: 'Belgrano', serif;
   border: none;
   border-radius: 2px;
   outline: none;
@@ -83,7 +83,7 @@ input.btn {
   border-radius: 12px;
   font-size: 20px;
   padding: 10px;
-  font-family: 'Helvetica Neue';
+  font-family: 'Belgrano', serif;
 }
 .actions {
   border-radius: 10px;
@@ -170,7 +170,7 @@ img.logo {
   top: 0;
   z-index: -1;
   background-image: image-url("logoleft.png");
-  height: 620px;
+  height: 100vh;
   background-repeat: repeat-y;
   background-position: 50%, 50%;
   opacity: 0.7;
@@ -182,7 +182,7 @@ img.logo {
   top: 0;
   z-index: -1;
   background-image: image-url("logoright.png");
-  height: 620px;
+  height: 100vh;
   background-repeat: repeat-y;
   background-position: 50%, 50%;
   opacity: 0.7;
