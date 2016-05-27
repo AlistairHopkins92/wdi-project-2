@@ -15,13 +15,13 @@ class User < ActiveRecord::Base
   
   def self.find_for_oauth(auth, signed_in_resource=nil)
     identity = Identity.find_for_oauth(auth)
-    puts " signed in resource #{signed_in_resource}"
     user = signed_in_resource ? signed_in_resource : identity.user
-    user = create_user(auth) if user.nil?
+    user = create_user(auth, identity) if user.nil?
+    user
   end
 
   private
-  def self.create_user(auth)
+  def self.create_user(auth, identity=nil)
     # Get the existing user by email if the provider gives us a verified email.
     # If no verified email was provided we assign a temporary email and ask the
     # user to verify it on the next step via UsersController.finish_signup
@@ -42,6 +42,10 @@ class User < ActiveRecord::Base
       # user.skip_confirmation!
       user.save!
     end
+
+    # Save the user to the identity
+    identity.user = user
+    identity.save
     
     user
   end

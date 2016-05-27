@@ -1,4 +1,5 @@
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
+  
   def facebook
     authorize("facebook")
   end
