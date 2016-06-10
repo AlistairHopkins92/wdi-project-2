@@ -20,7 +20,7 @@ A visitor to the website is able to to view the currently listed rides as well a
 
 ###Technologies:
 
-The box game is built with HTML/CSS and Rails, it used the following librairies:
+Come Ride With me is built with HTML/CSS and Rails, it used the following librairies:
 + styling done with foundation
 + registration forms made using devise / Oauth
  
